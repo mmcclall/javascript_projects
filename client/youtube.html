@@ -2,9 +2,32 @@
 <html>
     <head>
         <title>Middle Man Videos</title>
-        <p>Why use Youtube when you could use us to search Youtube for you?</p>
+        <link rel="stylesheet" href="css/youtube.css">
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/youtube.js"></script>
     </head>
     <body>
-        <footer>Copyright 2016. All Rights Reserved (but not really)</footer>
+        <div id="containter">
+            <header>
+                <h1>Search <span>Middle Man Videos</span></h1>
+                <p>Why search Youtube, when you can search Youtube through us?</p>
+            </header>
+            <section>
+                <form id="search-form" name="search-form" onsubmit="return search()">
+                    <div class="fieldcontainer">
+                        <input type="search" id="query" class="search-field" placeholder="Search Youtube...">
+                        <input type="submit" name="search-btn" id="search-btn" value="">
+                    </div>
+                </form>
+                
+                <ul id="results"></ul>
+                <div id="buttons"></div>
+            </section>
+        </div>
+        <br><br>
+        <footer>
+            <p>Copyright &copy 2016. All Rights Reserved (but not really)</p>
+        </footer>
     </body>
 </html>
