@@ -14,10 +14,10 @@ $(document).ready(function() {
     $(".active").show();
     
     // next handler
-    $("#next").on("click", nextSlide);
+    $("#next").on("click", nextSlide());
     
     // prev handler
-    $("#prev").on("click", prevSlide);
+    $("#prev").on("click", prevSlide());
     
     // autoswitch handler
     if(autoswitch == true)
@@ -51,4 +51,4 @@ $(document).ready(function() {
             $(".active").fadeIn(speed);
         });
     }
-}
+});
